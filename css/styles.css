@@ -1570,7 +1570,7 @@ html, body {
 }
 
 body {
-    background: var(--color-body);
+    background: black;
     font-family: var(--font-1);
     font-size: var(--text-size);
     font-style: normal;
@@ -2427,9 +2427,9 @@ button.btn--primary,
 input[type="submit"].btn--primary, 
 input[type="reset"].btn--primary, 
 input[type="button"].btn--primary {
-    background: var(--color-btn-primary);
-    border-color: var(--color-btn-primary);
-    color: var(--color-btn-primary-text);
+    background: var(#363A3F);
+    border-color: var(#202225);
+    color: var(#FFFFFF);
 }
 
 .btn.btn--primary:hover, 
@@ -2917,7 +2917,7 @@ input::-moz-focus-inner {
 .section-title h3 {
     z-index: 2;
     font-weight: 500;
-    color: var(--color-1);
+    color: black;
     padding-bottom: 2em;
     margin-top: 0;
     position: absolute;
@@ -3477,16 +3477,15 @@ input::-moz-focus-inner {
  *
  * ------------------------------------------------------------------- */
 .s-hero {
-    background-color: #121417;
+    background-color: #000000;
     width: 100%;
-    height: 100vh;
-    min-height: calc(25.5 * var(--space));
+    height: 60vh;
     overflow: hidden;
     position: relative;
 }
 
 .s-hero__bg {
-    background-image: url(../images/hero-bg.jpg);
+    background-color: #000000;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -3494,7 +3493,7 @@ input::-moz-focus-inner {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 36.5vw;
+    left: 0;
 }
 
 .s-hero__bg::after {
@@ -3507,18 +3506,6 @@ input::-moz-focus-inner {
     height: 100%;
     background: var(--color-black);
     opacity: .25;
-}
-
-.s-hero__bg .gradient-overlay {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, black), to(rgba(0, 0, 0, 0)));
-    background: linear-gradient(180deg, black 10%, rgba(0, 0, 0, 0) 100%);
-    opacity: .35;
 }
 
 
@@ -3536,50 +3523,27 @@ input::-moz-focus-inner {
 }
 
 .s-hero__content h1 {
-    font-size: 22rem;
-    font-weight: 600;
-    letter-spacing: -.04em;
+    font-size: 4rem;
+    font-family: sans-serif;
+    font-weight: 150;
+    letter-spacing: 0rem;
     line-height: 1;
-    color: var(--color-1);
+    color:whitesmoke;
     margin-bottom: 0;
     position: relative;
-}
-
-.s-hero__content h1::before {
-    display: block;
-    content: "";
-    height: 10rem;
-    width: 20rem;
-    background-image: url(../images/dots.svg);
-    -webkit-transform: translateX(-4rem);
-    transform: translateX(-4rem);
-    opacity: .25;
-    position: absolute;
-    bottom: .14em;
-    right: 100%;
+    left: 48rem;
 }
 
 /* hero content about
  * ----------------------------------------------- */
 .s-hero__content-about {
-    font-family: var(--font-2);
-    font-weight: 400;
-    font-size: 3.6rem;
+    font-family: sans-serif;
+    font-weight: 28;
+    font-size: 2rem;
     line-height: 1.444;
     color: var(--color-white);
-    padding-left: 3.6em;
+    padding-left: 35rem;
     position: relative;
-}
-
-.s-hero__content-about::before {
-    content: "";
-    display: block;
-    height: 1px;
-    width: 2.4em;
-    background-color: var(--color-border);
-    position: absolute;
-    left: .5em;
-    top: .8em;
 }
 
 .s-hero__content-about p {
@@ -3589,6 +3553,7 @@ input::-moz-focus-inner {
 /* hero content social
  * ----------------------------------------------- */
 .s-hero__content-social {
+    padding-left: 16rem;
     display: inline-block;
     font-size: 1.8rem;
     line-height: var(--vspace-1);
@@ -3821,7 +3786,7 @@ html.no-csstransitions .s-hero__content {
         max-width: 1000px;
     }
     .s-hero__content h1 {
-        font-size: 20rem;
+        font-size: 10rem;
     }
     .s-hero__content-about {
         font-size: 3.3rem;
@@ -3843,7 +3808,7 @@ html.no-csstransitions .s-hero__content {
         max-width: 800px;
     }
     .s-hero__content h1 {
-        font-size: 18rem;
+        font-size: 8rem;
     }
 }
 
@@ -3931,7 +3896,7 @@ html.no-csstransitions .s-hero__content {
 
 @media screen and (max-width: 700px) {
     .s-hero__content h1 {
-        font-size: 16rem;
+        font-size: 6rem;
     }
     .s-hero__content-about {
         font-size: 2.8rem;
@@ -3943,7 +3908,7 @@ html.no-csstransitions .s-hero__content {
 
 @media screen and (max-width: 600px) {
     .s-hero__content h1 {
-        font-size: 28vw;
+        font-size: 10vw;
     }
     .s-hero__content-about {
         padding-right: 15vw;
@@ -4011,23 +3976,12 @@ html.no-csstransitions .s-hero__content {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-    background-color: var(--color-bg);
-    padding-top: calc(7 * var(--space));
+    background-color: white;
+    padding-top: calc(4 * var(--space));
     padding-bottom: 0;
     position: relative;
 }
 
-.s-about::before {
-    content: "";
-    display: block;
-    width: 28rem;
-    height: 17.6rem;
-    background-image: url(../images/dots.svg);
-    opacity: .25;
-    position: absolute;
-    top: 0;
-    left: 50%;
-}
 
 .s-about .horizontal-line {
     width: 32px;
@@ -4035,17 +3989,6 @@ html.no-csstransitions .s-hero__content {
     position: absolute;
     top: -7rem;
     left: calc(6vw + 1px);
-}
-
-.s-about .horizontal-line::before {
-    content: "";
-    display: block;
-    width: 1px;
-    background-color: var(--color-1-darker);
-    position: absolute;
-    right: calc(50% + 1px);
-    top: 0;
-    bottom: 0;
 }
 
 
@@ -4757,8 +4700,8 @@ html.no-csstransitions .s-hero__content {
  *
  * ------------------------------------------------------------------- */
 .s-footer {
-    padding-top: var(--vspace-2);
-    padding-bottom: var(--vspace-4);
+    padding-bottom: var(--vspace-1);
+    padding-top: var(--vspace-1);
     color: white;
 }
 
@@ -4967,3 +4910,73 @@ html.no-csstransitions .s-hero__content {
         font-size: 1.4rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==============================================
+=========================================
+================================================
+CUSTOM CSS======================================
+=========================*/
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 15px;
+    color: #FFFFFF;
+    width: 100%;
+    max-width: 880px;
+}
+
+.cc-profile-image img {
+    position: relative;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    padding: 0;
+    margin: 0;
+    border: 15px solid transparent;
+    z-index: 9999;
+    transition: all .3s ease-out;
+}
+
+.content-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 15px;
+    color: #FFFFFF;
+    width: 100%;
+    max-width: 880px; 
+}
+
+
