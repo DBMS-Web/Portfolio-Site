@@ -2911,7 +2911,7 @@ input::-moz-focus-inner {
     line-height: 1;
     letter-spacing: -0.02em;
     color: var(--color-text);
-    opacity: .1;
+    opacity: 0.07;
 }
 
 .section-title h3 {
@@ -4980,3 +4980,54 @@ CUSTOM CSS======================================
 }
 
 
+/* css for port*/
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      margin: 5px;
+  }
+
+  .media {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:5px;
+  }
+.media::img {
+        max-width: 100%;
+        height: auto;
+        
+      }
+
+      .layer {
+        opacity: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10px;
+        height: 90%;
+        background: #FFF;
+        color: #151E3F;
+        transition: all 0.9s ease;
+        
+      }
+        .cool {
+          transition: all 0.9s ease;
+          transform: scale(0.1)
+        }
+        .media:hover .layer {
+            opacity: 0.8;
+            width: 90%;
+            transition: all 0.5s ease;
+        }
+        .media:hover .cool{
+            transform: scale(1);
+            transition: all 0.9s ease;
+        }
