@@ -3485,7 +3485,7 @@ input::-moz-focus-inner {
 }
 
 .s-hero__bg {
-    background-color: #000000;
+    background-image: url(../images/hero-bg.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -5030,4 +5030,9 @@ CUSTOM CSS======================================
         .media:hover .cool{
             transform: scale(1);
             transition: all 0.9s ease;
-        }
+}
+#shad{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    padding-left: 1rem;
+    padding-top: 4rem;
+}
