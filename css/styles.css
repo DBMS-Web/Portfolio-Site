@@ -3521,19 +3521,6 @@ input::-moz-focus-inner {
     background-size: 100%;
     z-index: -1;
   }
-/*
-.s-hero__bg::after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--color-black);
-    opacity: .25;
-}
-*/
 
 
 /* ------------------------------------------------------------------- 
@@ -3553,7 +3540,7 @@ input::-moz-focus-inner {
     font-size: 4rem;
     font-family: sans-serif;
     font-weight: 150;
-    letter-spacing: 0rem;
+    letter-spacing: 0.5rem;
     line-height: 1;
     color:whitesmoke;
     margin-bottom: 0;
@@ -3574,7 +3561,7 @@ input::-moz-focus-inner {
 }
 
 .s-hero__content-about p {
-    margin-bottom: var(--vspace-2);
+    margin-bottom: var(--vspace-1);
 }
 
 /* hero content social
@@ -5106,7 +5093,7 @@ CUSTOM CSS======================================
     width: 16px;
     height: 10px;
     position: absolute;
-    background: #00c4f3;
+    background: #6c737d;
     z-index: 5;
     left: 0;
     right: 0;
@@ -5117,7 +5104,7 @@ CUSTOM CSS======================================
   }
   
   .timeline .hexa:before {
-    border-bottom: 4px solid #00c4f3;
+    border-bottom: 4px solid #6c737d;
     border-left-width: 8px;
     border-right-width: 8px;
     top: -4px;
@@ -5126,7 +5113,7 @@ CUSTOM CSS======================================
   .timeline .hexa:after {
     border-left-width: 8px;
     border-right-width: 8px;
-    border-top: 4px solid #00c4f3;
+    border-top: 4px solid #6c737d;
     bottom: -4px;
   }
   
@@ -5145,7 +5132,7 @@ CUSTOM CSS======================================
   .flag {
     position: relative;
     display: inline;
-    background: rgb(255,255,255);
+    background: rgb(0, 0, 0);
     font-weight: 600;
     z-index: 15;
     padding: 6px 10px;
@@ -5199,7 +5186,7 @@ CUSTOM CSS======================================
   }
   
   .time {
-    background: #00c4f3;
+    background: #6c737d;
     display: inline-block;
     padding: 8px;
   }
@@ -5208,12 +5195,13 @@ CUSTOM CSS======================================
     position: relative;
     margin: 1em 0 0 0;
     padding: 1em;
-    background: rgb(254,254,254);
+    background: #14171B;
     -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
     -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
     box-shadow: 0 0 1px rgba(0,0,0,0.20);
     z-index: 15;
   }
+  
   
   .direction-l .desc,
   .direction-r .desc {
